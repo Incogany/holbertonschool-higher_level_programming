@@ -1,12 +1,14 @@
 #!/usr/bin/python3
 def roman_to_int(roman_string):
     number = 0
+    if roman_string is None or isinstance(roman_string, str) is False:
+        return 0
     for i in range(len(roman_string)):
         if roman_string[i] == "M":
             number += 1000
             if roman_string[i-1] == "C" and i != 0:
                 number -= 200
-        if roman_string[i] == "D" :
+        if roman_string[i] == "D":
             number += 500
             if roman_string[i-1] == "C" and i != 0:
                 number -= 200
