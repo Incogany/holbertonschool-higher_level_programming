@@ -1,7 +1,7 @@
-The ``2-matrix_divide`` module
+The ``3-say_my_name`` module
 ============================
 
-Using ``Divide all elements of a matrix``
+Using ``Print the first and last name``
 -----------------------------------
 
 	>>> say_my_name = __import__('3-say_my_name').say_my_name
