@@ -10,8 +10,8 @@ class Rectangle:
     """
     def __init__(self, width=0, height=0):
         """Constructor Function using property and setter"""
-        self.width = width
         self.height = height
+        self.width = width
 
     @property
     def width(self):
@@ -40,3 +40,14 @@ class Rectangle:
         if value < 0:
             raise TypeError("height must be >= 0")
         self.__height = value
+
+    def area(self):
+        """Returns the calculated area of Rectangle instance"""
+        return self.width * self.height
+
+    def perimeter(self):
+        """Returns the calculated perimeter of Rectangle instance"""
+        if self.height == 0 or self.width == 0:
+            return 0
+        else:
+            return (self.width + self.height) * 2
