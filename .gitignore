@@ -1,0 +1,176 @@
+# Created by https://www.gitignore.io/api/emacs,python,executable
+# Edit at https://www.gitignore.io/?templates=emacs,python,executable
+
+### Emacs ###
+# -*- mode: gitignore; -*-
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# Org-mode
+.org-id-locations
+*_archive
+
+# flymake-mode
+*_flymake.*
+
+# eshell files
+/eshell/history
+/eshell/lastdir
+
+# elpa packages
+/elpa/
+###
+# reftex files
+*.rel
+
+# AUCTeX auto folder
+/auto/
+
+# cask packages
+.cask/
+dist/
+
+# Flycheck
+flycheck_*.el
+
+# server auth directory
+/server/
+
+# projectiles files
+.projectile
+
+# directory configuration
+.dir-locals.el
+
+# network security
+/network-security.data
+
+
+### Executable ###
+*.app
+*.bat
+*.cgi
+*.com
+*.exe
+
+# mypy
+.mypy_cache/
+.dmypy.json
+# End of https://www.gitignore.io/api/emacs,python,executabledmypy.json
+
+# Pyre type checker
+.pyre/
+
+# mkdocs documentation
+/site
+*.gadget
+.pydevproject
+
+*.jar
+.mr.developer.cfg
+.project
+*.pif
+*.vb
+*.wsf
+
+# Mr Developer
+
+### Python ###
+# Byte-compiled / optimized / DLL files
+__pycache__/
+.ropeproject
+*.py[cod]
+*$py.class
+
+
+# Rope project settings
+# C extensions
+*.so
+
+.spyderproject
+.spyproject
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+downloads/
+# Spyder project settings
+eggs/
+.eggs/
+lib/
+lib64/
+
+parts/
+sdist/
+var/
+# SageMath parsed files
+*.sage.py
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+celerybeat-schedule
+
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# celery beat schedule file
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+
+*.spec
+
+# Installer logs
+pip-log.txt
+#Pipfile.lock
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+#   install all needed dependencies.
+.tox/
+.nox/
+#   having no cross-platform support, pipenv may install dependencies that don't work, or not
+.coverage
+.coverage.*
+#   However, in case of collaboration, if having platform-specific dependencies or dependencies
+.cache
+nosetests.xml
+#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
+coverage.xml
+*.cover
+# pipenv
+.hypothesis/
+.pytest_cache/
+
+
+# Translations
+.python-version
+*.mo
+*.pot
+# pyenv
+
+
+# Scrapy stuff:
+target/
+# PyBuilder
+.scrapy
+
+
+# Sphinx documentation
+docs/_build/
+
+### others ###
+
+*main.py
+*1.py
+*2.py
