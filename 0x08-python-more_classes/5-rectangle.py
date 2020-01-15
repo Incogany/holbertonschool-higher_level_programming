@@ -70,4 +70,4 @@ class Rectangle:
 
     def __del__(self):
         """Detect instance deletion of rectangle"""
-        print("Bye Rectangle...")
+        print("Bye rectangle...")
