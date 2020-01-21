@@ -7,7 +7,7 @@
 * Super Class: also know like baseclass or parentclass The class whose features are inherited is known as super class(or a base class or a parent class).
 *  Sub Class: The class that inherits the other class is known as sub class(or a derived class, extended class, or child class). The subclass can add its own fields and methods in addition to the superclass fields and methods.
 
-##@ How to list all attributes and methods of a class or instance
+## How to list all attributes and methods of a class or instance
 
 Try the inspect module. getmembers and the various tests should be helpful.
 ```
@@ -131,7 +131,7 @@ type(name, bases, dict)
 type() With a Single Object Parameter
 If a single object is passed to type(), the function returns its type.
 
-If you need to check the type of an object, it is better to use the Python isinstance() function instead. It's because the isinstance() function also checks if the given object is an instance of the subclass.
+__IMPORTANT__ If you need to check the type of an object, it is better to use the Python isinstance() function instead. It's because the isinstance() function also checks if the given object is an instance of the subclass.
 
 
 #### super()
