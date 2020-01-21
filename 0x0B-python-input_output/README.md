@@ -72,23 +72,24 @@ When you’re done with a file, call ```f.close()``` or ```f.close() ``` to clos
 
 with statement in Python is used in exception handling to make the code cleaner and much more readable. It simplifies the management of common resources like file streams. Observe the following code example on how the use of with statement makes code cleaner.
 ```
-__# file handling__ 
+\# file handling
 
-__# 1) without using with statement__ 
+\# 1) without using with statement__
 file = open('file_path', 'w') 
 file.write('hello world !') 
 file.close() 
 
-__# 2) without using with statement__ 
+\# 2) without using with statement__ 
 file = open('file_path', 'w') 
 try: 
      file.write('hello world') 
 finally: 
 	 file.close()
-__# using with statement__ 
+\# using with statement__ 
 with open('file_path', 'w') as file: 
      file.write('hello world !') 
 
+```
 #### What is JSON what is serialization and What is deserialization
 
 __JSON__ JAVASCRIPT OBJECT NOTATION is a format that encodes objects in a string. __Serialization__ means to convert an object into that string, and __deserialization__ is its inverse operation (convert string -> object).
