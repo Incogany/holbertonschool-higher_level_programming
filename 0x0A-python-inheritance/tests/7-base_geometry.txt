@@ -1,4 +1,4 @@
-The ``integer_validator`` module
+The ``integer_validator`` module:
 ==============================
 
 Using ``integer validator``
