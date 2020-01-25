@@ -11,7 +11,7 @@ class Square(Rectangle):
         """
         method constructor class Square
         """
-        super(Square, self).__init__(size, size, x, y, id)
+        super().__init__(size, size, x, y, id)
 
     def __str__(self):
         """
