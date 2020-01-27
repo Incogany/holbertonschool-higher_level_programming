@@ -71,10 +71,13 @@ class Base:
         """
         returns a list of instances
         """
-        with open(cls.__name__ + ".json", "r") as my_file:
-            read = my_file.read()
-            lists = Base.from_json_string(read)
-            create = []
-            for i in lists:
-                create.append(cls.create(**i))
-            return create
+        try:
+            with open(cls.__name__ + ".json", "r") as my_file:
+                read = my_file.read()
+                lists = Base.from_json_string(read)
+                create = []
+                for i in lists:
+                    create.append(cls.create(**i))
+                return create
+        except IOError:
+            return []
