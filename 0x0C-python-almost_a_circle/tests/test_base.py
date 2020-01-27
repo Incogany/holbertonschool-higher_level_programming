@@ -8,6 +8,7 @@ import unittest
 from models.base import Base
 from models.rectangle import Rectangle
 
+
 class Test_Base(unittest.TestCase):
     """Base class tests"""
     def test_validate(self):
@@ -29,7 +30,7 @@ class Test_Base(unittest.TestCase):
     def test_validate2(self):
         """ validate the id number, with 2 or more args"""
         with self.assertRaises(TypeError):
-            C1 = Base(3,7)
+            C1 = Base(3, 7)
 
     def test_validate3(self):
         """ validate if the args is str """
@@ -38,7 +39,7 @@ class Test_Base(unittest.TestCase):
 
     def test_validate4(self):
         """ validate if the args is str """
-        E1 = Base((1,2))
+        E1 = Base((1, 2))
         self.assertEqual(E1.id, (1, 2))
 
     def test_validate5(self):
@@ -49,7 +50,7 @@ class Test_Base(unittest.TestCase):
     def test_validate6(self):
         """ validate if the args is str """
         G1 = Base([1, 2])
-        self.assertEqual(G1.id, [1, 2] )
+        self.assertEqual(G1.id, [1, 2])
 
 if __name__ == "__main__":
     unittest.main()
