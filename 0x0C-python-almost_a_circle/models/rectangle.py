@@ -1,9 +1,13 @@
 #!/usr/bin/python3
+""" Class Rectangle"""
 from models.base import Base
 
 
 class Rectangle(Base):
     def __init__(self, width, height, x=0, y=0, id=None):
+        """
+        Constructor Rectangle
+        """
         self.width = width
         self.height = height
         self.x = x
@@ -97,17 +101,18 @@ class Rectangle(Base):
         Print an Unofficial string
         """
         return "[Rectangle] ({}) {}/{} - {}/{}".\
-        format(self.id, self.__x, self.__y, self.__width, self.__height)
+            format(self.id, self.__x, self.__y, self.__width, self.__height)
 
     def update(self, *args, **kwargs):
         """
         *Args: This type of argument is called a “no-keyword argument”
         - Argument order is super important.
-        **kwargs can be thought of as a double pointer to a dictionary:key/value
+        **kwargs can be thought of as a double pointer to a dictionary:
+        key/value
         """
         if len(args) >= 1:
             self.id = args[0]
-        if len(args)  >= 2:
+        if len(args) >= 2:
             self.width = args[1]
         if len(args) >= 3:
             self.height = args[2]

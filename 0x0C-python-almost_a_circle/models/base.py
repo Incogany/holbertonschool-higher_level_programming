@@ -1,5 +1,7 @@
 #!/usr/bin/python3
+"""Base class"""
 import json
+
 
 class Base:
     """
@@ -40,3 +42,39 @@ class Base:
 
         with open(cls.__name__ + ".json", "w+") as my_file:
             my_file.write(dicts)
+
+    @staticmethod
+    def from_json_string(json_string):
+        """
+        returns the list of the JSON string representation json_string
+        """
+        if json_string is [None, ""]:
+            return "[]"
+        return json.loads(json_string)
+
+    @classmethod
+    def create(cls, **dictionary):
+        """
+        returns an instance with all attributes already set
+        """
+        if cls.__name__ == "Rectangle":
+            tmp = cls(1, 1)
+            tmp.update(**dictionary)
+            return tmp
+        if cls.__name__ == "Square":
+            tmp = cls(1)
+            tmp.update(**dictionary)
+            return tmp
+
+    @classmethod
+    def load_from_file(cls):
+        """
+        returns a list of instances
+        """
+        with open(cls.__name__ + ".json", "r") as my_file:
+            read = my_file.read()
+            lists = Base.from_json_string(read)
+            create = []
+            for i in lists:
+                create.append(cls.create(**i))
+            return create

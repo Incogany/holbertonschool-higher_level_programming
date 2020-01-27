@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-from models.base import Base
+""" Class Square """
 from models.rectangle import Rectangle
+
 
 class Square(Rectangle):
     """
@@ -18,7 +19,7 @@ class Square(Rectangle):
         Print str method, return representation object
         """
         return "[Square] ({}) {}/{} - {}"\
-        .format(self.id, self.x, self.y, self.width)
+            .format(self.id, self.x, self.y, self.width)
 
     @property
     def size(self):
@@ -54,7 +55,7 @@ class Square(Rectangle):
             self.x = args[2]
         if len(args) >= 4:
             self.y = args[3]
-        if len(args ) == 0:
+        if len(args) == 0:
             for key, value in kwargs.items():
                 if key == "id":
                     self.id = value
