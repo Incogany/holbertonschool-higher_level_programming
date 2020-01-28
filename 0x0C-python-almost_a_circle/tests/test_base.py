@@ -48,7 +48,7 @@ class Test_Base(unittest.TestCase):
         self.assertEqual(F1.id, {"hi": 10, "betty": 20})
 
     def test_validate6(self):
-        """ validate if the args is str """
+        """ validate if the args is str"""
         G1 = Base([1, 2])
         self.assertEqual(G1.id, [1, 2])
 

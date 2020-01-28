@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Unit tests for Rectangle class
+Unittests for Rectangle class
 """
 
 
