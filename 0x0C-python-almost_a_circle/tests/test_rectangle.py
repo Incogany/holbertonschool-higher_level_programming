@@ -19,9 +19,9 @@ class Test_Rectangle(unittest.TestCase):
         Validate the number of id
         """
         R1 = Rectangle(10, 2)
-        self.assertEqual(R1.id, 4)
+        self.assertEqual(R1.id, 7)
         R2 = Rectangle(2, 10)
-        self.assertEqual(R2.id, 5)
+        self.assertEqual(R2.id, 8)
         R3 = Rectangle(10, 2, 0, 0, 12)
         self.assertEqual(R3.id, 12)
 

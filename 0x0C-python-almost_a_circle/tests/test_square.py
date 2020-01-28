@@ -18,7 +18,7 @@ class Test_Square(unittest.TestCase):
         Validate the number of id
         """
         S1 = Square(5)
-        self.assertEqual(S1.id, 11)
+        self.assertEqual(S1.id, 14)
         S2 = Square(5, 2, 1, 48)
         self.assertEqual(S2.id, 48)
 
