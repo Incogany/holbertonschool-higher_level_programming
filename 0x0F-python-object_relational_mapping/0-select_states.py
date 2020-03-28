@@ -10,6 +10,3 @@ if __name__ == "__main__":
     my_states = c.fetchall()
     for state in my_states:
         print(state)
-"""    cur.close()
-    db.close()
-"""
