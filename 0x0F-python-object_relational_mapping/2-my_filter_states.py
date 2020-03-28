@@ -15,3 +15,5 @@ if __name__ == "__main__":
     for state in my_states:
         if sys.argv[4] == state[1]:
             print(state)
+    c.close()
+    db.close()
